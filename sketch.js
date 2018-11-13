@@ -4,15 +4,21 @@ function windowResized() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight)
-  //select('canvas').position(100, 100);
-  fill(240);
-  noStroke();
+
+
 }
 
 let snowflakes = []; // array to hold snowflake objects
 
 function draw() {
+
+  var width1 = windowWidth;
+  var height1 = windowHeight;
+  createCanvas(width1/1.75,240)
+  select('canvas').position(windowWidth/4.75, 210);
+  fill(240);
+  noStroke();
+
   background('black');
   let t = frameCount / 160; // update time
 
@@ -26,6 +32,7 @@ function draw() {
     flake.update(t); // update snowflake position
     flake.display(); // draw snowflake
   }
+    //windowResized();
 }
 
 // snowflake class
@@ -34,7 +41,7 @@ function snowflake() {
   this.posX = 0;
   this.posY = random(-50, 0);
   this.initialangle = random(0, 2 * PI);
-  this.size = random(2, 5);
+  this.size = random(1, 3);
 
   // radius of snowflake spiral
   // chosen so the snowflakes are uniformly spread out in area

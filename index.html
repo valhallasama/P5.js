@@ -9,7 +9,100 @@
     <script src="../addons/p5.dom.min.js"></script>
     <script src="../addons/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    .menu {
+      float:left;
+      width:20%;
+      text-align:center;
+    }
+    .menu a {
+      background-color:#e5e5e5;
+      padding:8px;
+      margin-top:7px;
+      display:block;
+      width:100%;
+      color:navy;
+    }
+    .main {
+      float:left;
+      width:60%;
+      padding:0 20px;
+    }
+    .right {
+      background-color:#e5e5e5;
+      float:left;
+      width:20%;
+      padding:15px;
+      margin-top:7px;
+      text-align:center;
+    }
+    /* #myCanvas {
+      border: solid 2px ;
+      width: 80%;
+      Height: 150px;
+    } */
+
+    @media only screen and (max-width:620px) {
+      /* For mobile phones: */
+      .menu, .main, .right {
+        width:100%;
+      }
+    }
+    </style>
+
   </head>
-  <body>
+
+  <body style="font-family:Verdana;color:#aaaaaa;">
+
+
+
+  <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+    <h1>Hello Valhallasama</h1>
+  </div>
+
+  <div style="overflow:auto">
+    <div class="menu">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+      <a href="#">Link 6</a>
+    </div>
+
+    <div class="main">
+      <h2>Lorum Ipsum</h2>
+      <!-- <canvas id="myCanvas"></canvas> -->
+<!--
+      <script>
+
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+            ctx.fillStyle="#FF0000";
+            ctx.fillRect(0,0,150,75);
+</script> -->
+      <p>paragraph is here</p>
+    </div>
+
+    <div class="right">
+      <h2>About</h2>
+      <p>paragraph</p>
+      <p>paragraph</p>
+      <p>paragraph</p>
+      <p>paragraph</p>
+      <p>paragraph</p>
+      <p>paragraph</p>
+      <p>paragraph</p>
+    </div>
+  </div>
+
+  <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">paragraph</div>
+
   </body>
 </html>
